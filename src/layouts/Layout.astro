@@ -5,6 +5,8 @@ interface Props {
 
 const { title } = Astro.props;
 import '@fontsource-variable/onest';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!doctype html>
@@ -19,9 +21,15 @@ import '@fontsource-variable/onest';
 	</head>
 	<body>
 		<div 
-		class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
-		
-		<slot />
+		class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+			<Header/>
+			<slot />
+			<Footer/>
+			<script>
+				import '../scripts/Menu.js'
+			</script>
+		</div>
+			
 	</body>
 </html>
 <style is:global>
