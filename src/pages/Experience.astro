@@ -1,9 +1,38 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import TimeLine from '../components/TimeLine.astro';
+
+const title = 'Experiencia';
+
 ---
 
-<Layout title="Experiencia">
-	 <main>
-		<h2>Hola!</h2>
-	 </main>
+<Layout title={title}>
+	<section class="section_Experience">
+	  <TimeLine />
+	</section>
+	
 </Layout>
+
+<style>
+	.section_Experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem; /* padding por defecto para pantallas pequeñas */
+}
+
+/* Aumenta el padding para pantallas medianas (por ejemplo, tablets) */
+@media (min-width: 768px) {
+  .section_Experience {
+    padding: 5rem;
+  }
+}
+
+/* Aumenta aún más el padding para pantallas grandes (por ejemplo, ordenadores de escritorio) */
+@media (min-width: 1024px) {
+  .section_Experience {
+    padding: 10rem;
+  }
+}
+
+</style>

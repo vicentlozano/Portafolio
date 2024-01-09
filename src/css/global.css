@@ -1,0 +1,98 @@
+
+h1 {
+    color: #e3e8f3; /* text-gray-900 */
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 1rem; /* gap-x-4 */
+    padding-bottom: 1.5rem; /* pb-6 */
+}
+
+.a{display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+.section {
+	margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+	font-size: 1.3rem;
+	margin-top: 0.9rem;
+}
+	/* Estilos para pantallas con un ancho mínimo de 768px (tablets) */
+
+@media (min-width: 768px) {
+    main {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+	.myself2{
+		border-radius:50%;
+		width:3rem;
+		height:3rem;
+		justify-content: center;
+		
+	}
+	.h1{
+		font-size: 3rem;
+		margin-right: 1rem;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+	}
+	.a{
+		margin-top: 2rem;
+
+	}
+	p{
+		font-size: 1.1rem;
+		margin-top: 0.5rem;
+	}}
+		/* Estilos para pantallas con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+		.h1 {
+			font-size: 2rem;
+		}
+		.a {
+			margin-top: 1rem;
+		}
+		.myself2 {
+			width: 3rem;
+			height: 3rem;
+		}
+		p{
+			font-size: 0.7rem;
+			margin-top: 0.3rem;
+		}
+	}
+
+	/* Estilos para pantallas con un ancho máximo de 480px (teléfonos móviles) */
+@media (max-width: 480px) {
+		.h1 {
+			font-size: 1.5rem;
+		}
+		.a {
+			margin-top: 0.5rem;
+		}
+		.myself2 {
+			width: 2rem;
+			height: 2rem;
+		}
+		p{
+			font-size: 0.5rem;
+			margin-top: 0.2rem;}
+	}
