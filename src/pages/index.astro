@@ -7,10 +7,10 @@ import myself2 from '../img/myself2.jpg';
 ---
 <Layout title={title}>
     <main class ="main">
+       <Image src={myself2} alt = myself2 class = "myself2" />
        <section class = "section">
-                   <Image src={myself2} alt = myself2 class = "myself2" />
-                   <h1 class ="h1">Hey, soy vilodev <a href ="https://www.linkedin.com/in/vicent-lozano-hervas-9bb498187?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACwINJ8B9u2AnoPr-2fvxh0bW4IXmKY5AaY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BiC1uyoWlQJe6LN2gPgmk%2Bw%3D%3D"
-                       target = "_blank" class = "a"><Badge>Disponible para trabajar</Badge></a></h1>
+                   <h1 class ="h1">Hola, soy Vicente Lozano Hervás <a href ="https://www.linkedin.com/in/vicent-lozano-hervas-9bb498187?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACwINJ8B9u2AnoPr-2fvxh0bW4IXmKY5AaY&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BiC1uyoWlQJe6LN2gPgmk%2Bw%3D%3D"
+                       target = "_blank" class = "a"><Badge class="badge"><p class="badgeText">Disponible para trabajar</p></Badge></a></h1>
                    
                    <p>Estudio Desarrollo de Aplicaciones Web en el IES Jaume II el Just, en Tavernes, Valencia.</p>
                    <p>Me encanta el mundo de la programación y la tecnología y me gustaría poder dedicarme a ello en un futuro.</p>
@@ -19,4 +19,139 @@ import myself2 from '../img/myself2.jpg';
     </main>
 </Layout>
 
- 
+<style>
+    h1 {
+    color: #e3e8f3; /* text-gray-900 */
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: bold; /* font-bold */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    gap: 1rem; /* gap-x-4 */
+    padding-bottom: 1.5rem; /* pb-6 */
+}
+
+.a{display: flex;
+		justify-content: center;
+		align-items: center;
+		
+	}
+.section {
+	margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+	border: 3px solid slategray;
+	border-radius: 10px;
+	padding: 1rem;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+p{
+	font-size: 1.3rem;
+	margin-top: 0.9rem;
+}
+.badgeText{
+    margin-bottom: 0.2em;
+}
+
+	/* Estilos para pantallas con un ancho mínimo de 768px (tablets) */
+@media (min-width: 1024px){
+	.myself2{
+		border-radius:50%;
+		width:10rem;
+		height:10rem;
+		justify-content: center;
+		margin-top: 1rem;
+		
+	}
+	.h1{
+		font-size: 2rem;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+	}
+	.a{
+		margin-top: 2rem;
+
+	}
+	p{
+		font-size: 1rem;
+		margin-top: 0.5rem;
+	}
+
+	}
+
+@media (max-width: 1024px) {
+   
+
+	.myself2{
+		border-radius:50%;
+		width:10rem;
+		height:10rem;
+		justify-content: center;
+		margin-top: 3rem;
+		
+	}
+	.h1{
+		font-size: 1.5rem;
+		font-weight: bold;
+		justify-content: center;
+		align-items: center;
+	}
+	.a{
+		margin-top: 2rem;
+
+	}
+	p{
+		font-size: 0.8rem;
+		margin-top: 0.4rem;
+	}}
+		/* Estilos para pantallas con un ancho máximo de 768px (tablets) */
+@media (max-width: 768px) {
+		.h1 {
+			font-size: 1rem;
+		}
+		.a {
+			margin-top: 1rem;
+		}
+		.myself2 {
+			width: 6rem;
+			height: 6rem;
+			border-radius:50%;
+			margin-top: 1.8rem;
+		}
+		p{
+			font-size: 0.7rem;
+			margin-top: 0.3rem;
+		}
+        .section{
+            margin: 1rem;
+        }
+	}
+
+	/* Estilos para pantallas con un ancho máximo de 480px (teléfonos móviles) */
+@media (max-width: 600px) {
+		.h1 {
+			font-size: 0.9rem;
+		}
+		.a {
+			margin-top: 0.5rem;
+		}
+		.myself2 {
+			width: 4rem;
+			height: 4rem;
+			border-radius:50%;
+			margin-top: 1rem;
+		}
+		p{
+			font-size: 0.6rem;
+			margin-top: 0.1rem;
+			}
+	}
+</style>

@@ -1,0 +1,24 @@
+---
+import { Image } from "astro:assets";
+
+const {name,img} = Astro.props;
+
+---
+
+<div class = "topic">
+    <Image src={img} alt="" class="topic__img">
+    <h3 class="topic__title">{name}</h3>
+</div>
+<style>
+.topic {
+    display: flex;
+    align-items: center;
+    border-radius: 26px;
+    border: 2px solid #eee;
+    color: #fff;
+    height: 55px;
+    font-size: 1.3rem;
+    padding: 0 24px;
+    position: relative;
+    transition: all .3s ease;
+}</style>
