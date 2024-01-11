@@ -22,10 +22,12 @@ import { ViewTransitions } from 'astro:transitions';
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
-	<body class="absolute top-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+	<body class="absolute top-0 z-[-2] min-h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] 100vh">
+		<div class="content">
 			<Header/>
 			<slot />
-			<Footer/>
+		</div>
+		<Footer/>
 	</body>
 </html>
 <style is:global>
@@ -36,10 +38,20 @@ import { ViewTransitions } from 'astro:transitions';
 		font-family: "Onest", system-ui, sans-serif;
 		background: none;
 		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
 	}
-	main{
-		flex:1;}
+	.content {
+		flex-grow: 1;
+	}
+	body {
+		display: flex;
+		flex-direction: column;
+		background: radial-gradient(ellipse at center, rgba(120,119,198,0.3) 0%, rgba(255,255,255,0) 100%);
+		background-repeat: no-repeat;
+		background-size: cover;
 
+	}
 	code {
 		font-family:
 			Menlo,
