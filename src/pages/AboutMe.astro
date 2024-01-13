@@ -40,14 +40,13 @@ import Habilidades from '../components/Habilidades.astro';
 
 	.containergrid-6{
 		display: grid;
-		grid-template-columns: repeat(auto-fit,minmax(140px,200px));
-		grid-template-rows: minmax(50px,auto);
-		column-gap: 2rem;
-		row-gap: 2rem;
-		padding: 2rem;
-		width:80%;
-		place-content: center;
-		background-color:blue;
+		grid-template-columns: repeat(auto-fill,minmax(236px,1fr));
+		gap:30px;
+		width:100%;
+		justify-content: center;
+		margin-top: 100px;
+		padding: 30px;
+		
 		
 		
 	
@@ -65,6 +64,9 @@ import Habilidades from '../components/Habilidades.astro';
 		transition-property: transform, background, box-shadow;
 		opacity: 0;
    		animation: fadeIn 1s forwards;
+		padding: 10px;
+		border-radius: 10px;
+		border: 1px solid black;
 		
 
 
@@ -73,7 +75,7 @@ import Habilidades from '../components/Habilidades.astro';
 		
 	}
 	.definition:hover{
-		transform:scale(1.1);
+		transform:scale(1);
 		background: opacity(0.5);
 		box-shadow: 0 0 10px pink;
 	

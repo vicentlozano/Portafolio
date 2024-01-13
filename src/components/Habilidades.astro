@@ -62,7 +62,6 @@ import { Image } from 'astro:assets';
         width:100%;
         gap: 20px;
         justify-content: center;
-        background-color: blue;
         place-items: center;
         border:20px black;
     }
@@ -70,13 +69,21 @@ import { Image } from 'astro:assets';
         display:flex;
         align-content: center;
         align-items: center;
-        border: 2px solid #eee;
-        background-color:violet;
+        transition-property: color;
+       
+    }
+    h4{
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        opacity: 90%;
+        padding-right:7px;
     }
     
     
     .topic:hover{
-        background-color: rgba(255,255,255,0.2);
+        color: rgb(0, 89, 255);
+        transition-duration: 1s;
     }
     
     h1{
@@ -85,7 +92,7 @@ import { Image } from 'astro:assets';
         font-weight: bold;
         opacity: 90%;
         margin-bottom: 3rem;
-        margin-top: 5rem;
+        margin-top: 9rem;
         text-align: center;
         
     }
