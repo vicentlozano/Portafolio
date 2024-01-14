@@ -4,6 +4,101 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Contacto.">
 	 <main>
-		<h2>Hola!</h2>
+		<div class=" flex flex-wrap justify-center mt-8 mb-4 space-x-12">
+			<p>whatsapp</p>
+			<p>email</p>
+			<p>instagram</p>
+			<p>facebook</p>
+			<p>twitter</p>
+			<p>linkedin</p>
+		</div>
+		<div class="grid">
+			<p>whatsapp</p>
+			<p>email</p>
+			<p>instagram</p>
+			<p>facebook</p>
+			<p>twitter</p>
+			<p>linkedin</p>
+		</div>
+		<section class="contenedorgrid">
+			
+			<div class = "grid2">
+				<p>whatsapp</p>
+				<p>email</p>
+				<p>instagram</p>
+				<p>facebook</p>
+				<p>twitter</p>
+				<p>linkedin</p>
+			</div>
+		</section>
+		<section class="cuadrado">
+			<div class="gridcuadrado">
+				<div class ="whatsapp">whatsapp</div>
+				<div class ="email">email</div>
+				<div class ="instagram">instagram</div>
+				<div class ="twitter">twitter</div>
+				<div class ="linkedin">linkedin</div>
+			</div>
+		</section>
 	 </main>
 </Layout>
+<style>
+	.grid {
+		display: grid;
+		grid-template-columns: repeat(8, 1fr);
+		justify-content: center;
+		justify-items: center;
+		grid-template-areas: "area1 area2 area3 area4 area5 area6 area7 area8";
+		background-color: aqua;
+		
+		
+	}
+	.grid p{
+		background-color: red;
+
+	}
+	.grid p:nth-child(1) {
+		grid-area: area2;
+	}
+	.grid p:nth-child(2) {
+		grid-area: area3;
+	}
+	.grid p:nth-child(3) {
+		grid-area: area4;
+	}
+	.grid p:nth-child(4) {
+		grid-area: area5;
+	}
+	.grid p:nth-child(5) {
+		grid-area: area6;
+	}
+	.grid p:nth-child(6) {
+		grid-area: area7;
+	}
+	.contenedorgrid{
+		display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: blue;
+	}
+	.grid2{
+    display: grid;
+    grid-template-columns: repeat(6, 9ch);
+    justify-items: center;
+	gap:10px;}
+	.cuadrado{
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		margin: 0;
+	}
+	.gridcuadrado{
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		gap: 10px;
+	}
+</style>
