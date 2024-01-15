@@ -1,14 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import flechaDown from '../components/Icons/flechaDown.astro';
+import FlechaDown from '../components/Icons/FlechaDown.astro';
+import CuadriculaContacto from '../components/CuadriculaContacto.astro';
 ---
 
 <Layout title="Contacto.">
-	 <main>
+	 <main class="flex flex-col justify-center items-center principal gap-11">
 		<h2>Puedes contactar conmigo a través de los siguientes canales</h2>
-		<flechaDown/>
+		<FlechaDown/>
+		<CuadriculaContacto/>
 	 </main>
 </Layout>
 <style>
+	h2{
+		font-size: 1.4rem;
+		font-weight: bold;
+		text-align: center;
+		opacity: 0.8;
+	}
 	
 </style>
