@@ -1,10 +1,51 @@
 ---
 
+const pathToNumber = {
+    "/": 'c1',
+    "/Experience": 'c2',
+    "/Projects": 'c3',
+    "/Contact": 'c4',
+    "/AboutMe": 'c5'
+};
+const url = new URL(Astro.request.url);
+const currentPath = url.pathname;
+const currentClass = pathToNumber[currentPath] || '';
 ---
-<div class = "flex justify-center gap-x-6 opacity-80 mt-4 mb-16">
-    <a href = "/">Inicio</a>
-    <a href = "/Experience">Experiencia</a>
-    <a href = "/Projects">Proyectos</a>
-    <a href = "/Contact">Contacto</a>
-    <a href = "/AboutMe">Sobre Mi</a>
+<div class = "flex justify-center gap-x-6 opacity-80 mt-4 mb-16 navegador-principal">
+    <a href = "/" class={`c1 ${currentClass === 'c1' ? 'active' : ''}`}>Inicio</a>
+    <a href = "/Experience" class={`c2 ${currentClass === 'c2' ? 'active' : ''}`}>Experiencia</a>
+    <a href = "/Projects" class={`c3 ${currentClass === 'c3' ? 'active' : ''}`}>Proyectos</a>
+    <a href = "/Contact" class={`c4 ${currentClass === 'c4' ? 'active' : ''}`}>Contacto</a>
+    <a href = "/AboutMe" class={`c5 ${currentClass === 'c5' ? 'active' : ''}`}>Sobre Mi</a>
 </div>
+<style>
+    .navegador-principal a{
+        text-transform: uppercase;
+        font-size:0.6rem;
+        text-decoration: underline;
+        text-decoration-color: rgba(0,140,255,0);
+        transition: text-decoration-color 0.6s ease-in;
+        animation-direction:normal;
+        text-underline-offset: 0.6em;
+        transition-timing-function: ease-out;
+        text-decoration-thickness: 2px;
+    }
+    @media (min-width: 450px){
+        .navegador-principal a{
+            font-size:0.8rem;
+            font-weight: bold;
+        }
+    }
+    .navegador-principal a:hover{
+        cursor:pointer;
+        text-decoration:underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color:rgb(0, 140, 255);
+        transition-duration: 0.6s;
+        transition-timing-function: ease-out;
+    }
+
+    .navegador-principal a.active {
+        text-decoration-color: rgb(0, 140, 255);
+    }
+</style>
