@@ -1,0 +1,33 @@
+/* empty css                            */
+import { e as createAstro, f as createComponent, r as renderTemplate, m as maybeRenderHead, i as renderComponent } from '../astro_cMhD-XD7.mjs';
+import 'kleur/colors';
+import 'html-escaper';
+import 'clsx';
+import { $ as $$Layout } from './AboutMe_f5Czg4j4.mjs';
+/* empty css                            */
+
+const $$Astro$2 = createAstro();
+const $$FlechaDown = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$2, $$props, $$slots);
+  Astro2.self = $$FlechaDown;
+  return renderTemplate`${maybeRenderHead()}<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler flecha" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-3tswsiq2><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-3tswsiq2></path><path d="M17 3.34a10 10 0 1 1 -14.995 8.984l-.005 -.324l.005 -.324a10 10 0 0 1 14.995 -8.336zm-5 3.66a1 1 0 0 0 -1 1v5.585l-2.293 -2.292l-.094 -.083a1 1 0 0 0 -1.32 1.497l4 4c.028 .028 .057 .054 .094 .083l.092 .064l.098 .052l.081 .034l.113 .034l.112 .02l.117 .006l.115 -.007l.114 -.02l.142 -.044l.113 -.054l.111 -.071a.939 .939 0 0 0 .112 -.097l4 -4l.083 -.094a1 1 0 0 0 -1.497 -1.32l-2.293 2.291v-5.584l-.007 -.117a1 1 0 0 0 -.993 -.883z" stroke-width="0" fill="currentColor" data-astro-cid-3tswsiq2></path></svg> `;
+}, "C:/Users/lozan/OneDrive/Documentos/JavaScript/Portafolio/src/components/FlechaDown.astro", void 0);
+
+const $$Astro$1 = createAstro();
+const $$CuadriculaContacto = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro$1, $$props, $$slots);
+  Astro2.self = $$CuadriculaContacto;
+  return renderTemplate`${maybeRenderHead()}<section class="cuadricula" data-astro-cid-dbkjkekj> <a href="https://www.instagram.com/vicentlozano94" class="text- w-full h-full instagram" data-astro-cid-dbkjkekj> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dbkjkekj><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-dbkjkekj></path><path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" data-astro-cid-dbkjkekj></path><path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" data-astro-cid-dbkjkekj></path><path d="M16.5 7.5l0 .01" data-astro-cid-dbkjkekj></path></svg> </a> <a href="https://www.twitter.com/vicentlozano94" class="text- w-full h-full twitter" data-astro-cid-dbkjkekj> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-x" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dbkjkekj><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-dbkjkekj></path><path d="M4 4l11.733 16h4.267l-11.733 -16z" data-astro-cid-dbkjkekj></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" data-astro-cid-dbkjkekj></path></svg> </a> <a href="https://www.linkedin.com/in/vicentlozano94" class="text- w-full h-full linkedin" data-astro-cid-dbkjkekj> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dbkjkekj> <path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-dbkjkekj></path> <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" data-astro-cid-dbkjkekj></path> <path d="M8 11l0 5" data-astro-cid-dbkjkekj></path> <path d="M8 8l0 .01" data-astro-cid-dbkjkekj></path> <path d="M12 16l0 -5" data-astro-cid-dbkjkekj></path> <path d="M16 16v-3a2 2 0 0 0 -4 0" data-astro-cid-dbkjkekj></path> </svg> </a> <a href="https://api.whatsapp.com/send?phone=34694501662" class="text- w-full h-full whatsapp" data-astro-cid-dbkjkekj> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dbkjkekj><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-dbkjkekj></path><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" data-astro-cid-dbkjkekj></path><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" data-astro-cid-dbkjkekj></path></svg> </a> <a href="mailto:lozanodroid@gmail.com" class="text- w-full h-full email" data-astro-cid-dbkjkekj> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="100%" height="100%" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" data-astro-cid-dbkjkekj><path stroke="none" d="M0 0h24v24H0z" fill="none" data-astro-cid-dbkjkekj></path><path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5" data-astro-cid-dbkjkekj></path><path d="M3 6l9 6l9 -6" data-astro-cid-dbkjkekj></path><path d="M15 18h6" data-astro-cid-dbkjkekj></path><path d="M18 15l3 3l-3 3" data-astro-cid-dbkjkekj></path></svg> </a> </section> `;
+}, "C:/Users/lozan/OneDrive/Documentos/JavaScript/Portafolio/src/components/CuadriculaContacto.astro", void 0);
+
+const $$Astro = createAstro();
+const $$Contact = createComponent(async ($$result, $$props, $$slots) => {
+  const Astro2 = $$result.createAstro($$Astro, $$props, $$slots);
+  Astro2.self = $$Contact;
+  return renderTemplate`${renderComponent($$result, "Layout", $$Layout, { "title": "Contacto.", "data-astro-cid-6klqy6yr": true }, { "default": ($$result2) => renderTemplate` ${maybeRenderHead()}<main class="flex flex-col justify-center items-center principal gap-11" data-astro-cid-6klqy6yr> <h2 data-astro-cid-6klqy6yr>Puedes contactar conmigo a través de los siguientes canales</h2> ${renderComponent($$result2, "FlechaDown", $$FlechaDown, { "data-astro-cid-6klqy6yr": true })} ${renderComponent($$result2, "CuadriculaContacto", $$CuadriculaContacto, { "data-astro-cid-6klqy6yr": true })} </main> ` })} `;
+}, "C:/Users/lozan/OneDrive/Documentos/JavaScript/Portafolio/src/pages/Contact.astro", void 0);
+
+const $$file = "C:/Users/lozan/OneDrive/Documentos/JavaScript/Portafolio/src/pages/Contact.astro";
+const $$url = "/Contact";
+
+export { $$Contact as default, $$file as file, $$url as url };
